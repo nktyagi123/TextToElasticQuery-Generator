@@ -15,7 +15,7 @@ def get_gemini_response(question,prompt):
 
 def read_elasticsearch_query(query, index):
     
-    es =  Elasticsearch(hosts=['https://ops-analytics-preprod.appl.kp.org:9200'],verify_certs=False,timeout=600, http_auth=('G073080', "Rakesh@nktyagi423") )
+    es =  Elasticsearch(hosts=['http://localhost:9200'],verify_certs=False,timeout=600, http_auth=('username', "password") )
 
     try:
         print(query)
